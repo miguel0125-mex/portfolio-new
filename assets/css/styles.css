@@ -1,9 +1,18 @@
-.header {
-  background-color: #1d1d1d;
-  width: 100%;
+/*---ABSTRACTS---*/
+/*----COLORS----*/
+/*---COMPONENTS---*/
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.header h1 {
-  color: red;
+
+body {
+  background: #020d20;
+}
+
+.header .logo {
+  color: #2dffce;
 }
 
 /*# sourceMappingURL=styles.css.map */
