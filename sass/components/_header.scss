@@ -1,0 +1,29 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 $md;
+    .logo {
+        font-size: $xs;
+        color: $colorLetras;
+        margin: 1rem;
+    }
+    .menu>ul {
+        display: flex;
+        &>li {
+            list-style: none;
+            justify-content: space-around;
+            padding: 0 $xs;
+            &>a {
+                text-decoration: none;
+                font-size: 1.70;
+                color: $colorLetras;
+                font-weight: $bold;
+                transition: all .5s ease-in-out;
+                &:hover {
+                    color: $colorTitulos;
+                }
+            }
+        }
+    }
+}
