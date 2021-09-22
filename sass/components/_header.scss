@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 $md;
+    padding: $xs $md;
     .logo {
         font-size: $xs;
         color: $colorLetras;
@@ -16,12 +16,13 @@
             padding: 0 $xs;
             &>a {
                 text-decoration: none;
-                font-size: 1.70;
+                font-size: 1.30;
                 color: $colorLetras;
-                font-weight: $bold;
+                font-weight: 1rem;
                 transition: all .5s ease-in-out;
+                font-family: $titulos;
                 &:hover {
-                    color: $colorTitulos;
+                    color: $colorParrafos;
                 }
             }
         }

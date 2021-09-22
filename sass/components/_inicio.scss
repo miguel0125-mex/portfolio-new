@@ -1,0 +1,36 @@
+.inicio-info {
+    display: flex;
+    flex-direction: column;
+    .inicio-pre {
+        font-size: $xs;
+        color: $colorLetras;
+        font-weight: $medium;
+        font-family: $titulos
+    }
+    .inicio-name {
+        font-size: $lg;
+        font-weight: $bold;
+        font-family: $parrafos;
+        color: $colorTitulos;
+        opacity: .9;
+        padding-top: $xs;
+    }
+    .inicio-pre2 {
+        font-size: $lg;
+        font-weight: $bold;
+        font-family: $parrafos;
+        color: $colorParrafos;
+        opacity: .8;
+        padding: $xs 0;
+    }
+    .p-2 {
+        width: 60%;
+        .inicio-pre3 {
+            font-size: 1.65rem;
+            font-weight: $md;
+            color: $colorParrafos;
+            font-family: $parrafos;
+            line-height: 1.75;
+        }
+    }
+}
