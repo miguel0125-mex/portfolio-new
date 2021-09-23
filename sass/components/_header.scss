@@ -5,8 +5,9 @@
     padding: $xs $md;
     .logo {
         font-size: $xs;
-        color: $colorLetras;
+        color: $pink;
         margin: 1rem;
+        font-family: $titulos;
     }
     .menu>ul {
         display: flex;
@@ -17,12 +18,12 @@
             &>a {
                 text-decoration: none;
                 font-size: 1.30;
-                color: $colorLetras;
+                color: $pink;
                 font-weight: 1rem;
                 transition: all .5s ease-in-out;
                 font-family: $titulos;
                 &:hover {
-                    color: $colorParrafos;
+                    color: $white;
                 }
             }
         }

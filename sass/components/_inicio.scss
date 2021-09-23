@@ -1,17 +1,22 @@
+.inicio {
+    min-width: 100vh;
+    padding-top: 5rem;
+}
+
 .inicio-info {
     display: flex;
     flex-direction: column;
     .inicio-pre {
         font-size: $xs;
-        color: $colorLetras;
+        color: $pink;
         font-weight: $medium;
-        font-family: $titulos
+        font-family: $titulos;
     }
     .inicio-name {
         font-size: $lg;
         font-weight: $bold;
         font-family: $parrafos;
-        color: $colorTitulos;
+        color: $white;
         opacity: .9;
         padding-top: $xs;
     }
@@ -19,7 +24,7 @@
         font-size: $lg;
         font-weight: $bold;
         font-family: $parrafos;
-        color: $colorParrafos;
+        color: $white-gray;
         opacity: .8;
         padding: $xs 0;
     }
@@ -28,7 +33,7 @@
         .inicio-pre3 {
             font-size: 1.65rem;
             font-weight: $md;
-            color: $colorParrafos;
+            color: $white-gray;
             font-family: $parrafos;
             line-height: 1.75;
         }

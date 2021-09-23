@@ -1,0 +1,24 @@
+.about {
+    padding-top: 15rem;
+}
+
+.about_div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    .about_info {
+        padding-left: $xl;
+        .about_text {
+            color: $pink;
+            font-size: $md;
+            font-family: $parrafos;
+            font-weight: $medium;
+        }
+        .about_pre {
+            color: $white-gray;
+            font-family: $parrafos;
+            line-height: 1.75;
+            font-weight: $md;
+            padding-top: $md;
+        }
+    }
+}
