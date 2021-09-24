@@ -82,6 +82,7 @@ h4 {
 .inicio {
   min-width: 100vh;
   padding-top: 5rem;
+  padding-bottom: 8rem;
 }
 
 .inicio-info {
@@ -122,7 +123,8 @@ h4 {
 }
 
 .about {
-  padding-top: 15rem;
+  padding-top: 7rem;
+  min-height: 100vh;
 }
 
 .about_div {
@@ -138,12 +140,44 @@ h4 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
+.about_div .about_info .about_text:after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: -5px;
+  width: calc(50% - 2rem);
+  height: 1px;
+  background-color: #e9fffe;
+  opacity: 0.2;
+}
 .about_div .about_info .about_pre {
   color: #a5a6aa;
   font-family: "Inter", sans-serif;
   line-height: 1.75;
   font-weight: 2.5rem;
   padding-top: 2.5rem;
+}
+
+.list_skills {
+  list-style: none;
+  color: #a5a6aa;
+  font-family: "Inter", sans-serif;
+  font-weight: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 1.75;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0 2.5rem;
+  margin: 1.5rem 0 0 0;
+  padding: 0;
+}
+.list_skills > li::before {
+  content: "■";
+  position: relative;
+  color: #ff13eb;
+  padding-right: 1rem;
+  top: -2px;
+  position: relative;
 }
 
 /*# sourceMappingURL=styles.css.map */

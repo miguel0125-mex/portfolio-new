@@ -1,5 +1,6 @@
 .about {
-    padding-top: 15rem;
+    padding-top: 7rem;
+    min-height: 100vh;
 }
 
 .about_div {
@@ -12,6 +13,16 @@
             font-size: $md;
             font-family: $parrafos;
             font-weight: $medium;
+            &:after {
+                content: "";
+                display: block;
+                position: relative;
+                bottom: -5px;
+                width: calc(50% - 2rem);
+                height: 1px;
+                background-color: $white;
+                opacity: .2;
+            }
         }
         .about_pre {
             color: $white-gray;
@@ -20,5 +31,27 @@
             font-weight: $md;
             padding-top: $md;
         }
+    }
+}
+
+.list_skills {
+    list-style: none;
+    color: $white-gray;
+    font-family: $parrafos;
+    font-weight: $md;
+    font-size: 1.5rem;
+    line-height: 1.75;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0 $md;
+    margin: 1.5rem 0 0 0;
+    padding: 0;
+    &>li::before {
+        content: "■";
+        position: relative;
+        color: $pink;
+        padding-right: 1rem;
+        top: -2px;
+        position: relative;
     }
 }
