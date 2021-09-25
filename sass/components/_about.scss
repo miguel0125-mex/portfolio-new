@@ -1,11 +1,11 @@
 .about {
-    padding-top: 7rem;
+    padding: 7rem 0;
     min-height: 100vh;
 }
 
 .about_div {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     .about_info {
         padding-left: $xl;
         .about_text {
