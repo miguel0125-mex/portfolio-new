@@ -1,0 +1,80 @@
+.works {
+    padding: 7rem 0;
+    min-height: 100vh;
+    margin: 0 $xl * 2;
+    .work_text {
+        color: $pink;
+        font-size: $md;
+        font-family: $parrafos;
+        font-weight: $medium;
+        &::after {
+            content: "";
+            display: block;
+            position: relative;
+            bottom: -5px;
+            width: calc(25% - 4rem);
+            height: 1px;
+            opacity: .2;
+            background-color: $white;
+        }
+    }
+}
+
+.letter-holder {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    margin: $xl * 2 0;
+    .letter {
+        padding: 0 $xs;
+        font-size: $lg;
+        color: $white-gray;
+        font-family: $parrafos;
+    }
+}
+
+.load-6 .letter {
+    animation-name: loadingF;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    .l-1 {
+        animation-delay: 0.48s;
+    }
+    .l-2 {
+        animation-delay: 0.6s;
+    }
+    .l-3 {
+        animation-delay: 0.72s;
+    }
+    .l-4 {
+        animation-delay: 0.84s;
+    }
+    .l-5 {
+        animation-delay: 0.96s;
+    }
+    .l-6 {
+        animation-delay: 1.08s;
+    }
+    .l-7 {
+        animation-delay: 1.2s;
+    }
+    .l-8 {
+        animation-delay: 1.32s;
+    }
+    .l-9 {
+        animation-delay: 1.44s;
+    }
+    .l-10 {
+        animation-delay: 1.56s;
+    }
+}
+
+@keyframes loadingF {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

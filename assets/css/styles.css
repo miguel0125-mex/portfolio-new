@@ -180,4 +180,85 @@ h4 {
   position: relative;
 }
 
+.works {
+  padding: 7rem 0;
+  min-height: 100vh;
+  margin: 0 16rem;
+}
+.works .work_text {
+  color: #ff13eb;
+  font-size: 2.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.works .work_text::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: -5px;
+  width: calc(25% - 4rem);
+  height: 1px;
+  opacity: 0.2;
+  background-color: #e9fffe;
+}
+
+.letter-holder {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  margin: 16rem 0;
+}
+.letter-holder .letter {
+  padding: 0 2rem;
+  font-size: 6rem;
+  color: #a5a6aa;
+  font-family: "Inter", sans-serif;
+}
+
+.load-6 .letter {
+  animation-name: loadingF;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+}
+.load-6 .letter .l-1 {
+  animation-delay: 0.48s;
+}
+.load-6 .letter .l-2 {
+  animation-delay: 0.6s;
+}
+.load-6 .letter .l-3 {
+  animation-delay: 0.72s;
+}
+.load-6 .letter .l-4 {
+  animation-delay: 0.84s;
+}
+.load-6 .letter .l-5 {
+  animation-delay: 0.96s;
+}
+.load-6 .letter .l-6 {
+  animation-delay: 1.08s;
+}
+.load-6 .letter .l-7 {
+  animation-delay: 1.2s;
+}
+.load-6 .letter .l-8 {
+  animation-delay: 1.32s;
+}
+.load-6 .letter .l-9 {
+  animation-delay: 1.44s;
+}
+.load-6 .letter .l-10 {
+  animation-delay: 1.56s;
+}
+
+@keyframes loadingF {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
