@@ -1,0 +1,24 @@
+.footer {
+    margin-bottom: $xs;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .contact__icons>a {
+        padding: 0 1rem;
+        font-size: $md;
+        color: $pink;
+        transition: all 1s ease;
+        &:hover {
+            color: white;
+        }
+    }
+    p {
+        color: $pink;
+        font-family: $titulos;
+        font-size: $xs;
+        font-weight: $medium;
+    }
+}

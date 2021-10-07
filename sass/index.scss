@@ -1,6 +1,7 @@
 /*---ABSTRACTS---*/
 
-@import "./abstract/variables.scss";
+@import "./abstract/variables.scss",
+"./abstract/mixins";
 
 /*---COMPONENTS---*/
 
@@ -9,4 +10,5 @@
 "./components/inicio",
 "./components/about",
 "./components/works",
-"./components/contact";
+"./components/contact",
+"./components/footer";

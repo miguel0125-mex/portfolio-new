@@ -6,6 +6,7 @@
 /*----TIPOGRAFIAS---*/
 /*---TAMAÑOS LETRAS---*/
 /*---INTENSIDAD LETRA---*/
+/*----VISUALIZACION------*/
 /*---COMPONENTS---*/
 html {
   font-size: 62.5%;
@@ -82,7 +83,6 @@ h4 {
 .inicio {
   min-width: 100vh;
   padding-top: 5rem;
-  padding-bottom: 8rem;
 }
 
 .inicio-info {
@@ -112,7 +112,7 @@ h4 {
   padding: 2rem 0;
 }
 .inicio-info .p-2 {
-  width: 60%;
+  width: 70%;
 }
 .inicio-info .p-2 .inicio-pre3 {
   font-size: 1.65rem;
@@ -121,10 +121,27 @@ h4 {
   font-family: "Inter", sans-serif;
   line-height: 1.75;
 }
+@media screen and (max-width: 990px) {
+  .inicio-info .inicio-name {
+    font-size: 4.5rem;
+  }
+  .inicio-info .inicio-pre2 {
+    font-size: 4.5rem;
+    padding-top: 1.5rem;
+  }
+  .inicio-info .p-2 {
+    width: 100%;
+  }
+}
 
 .about {
-  padding: 7rem 0;
+  padding: 14rem 0;
   min-height: 100vh;
+}
+@media screen and (max-width: 990px) {
+  .about {
+    padding: 10rem 0;
+  }
 }
 
 .about_div {
@@ -157,6 +174,14 @@ h4 {
   font-weight: 2.5rem;
   padding-top: 2.5rem;
 }
+@media screen and (max-width: 990px) {
+  .about_div {
+    display: block;
+  }
+  .about_div .about_info {
+    padding-left: 0;
+  }
+}
 
 .list_skills {
   list-style: none;
@@ -181,7 +206,6 @@ h4 {
 }
 
 .works {
-  padding: 7rem 0;
   min-height: 100vh;
   margin: 0 16rem;
 }
@@ -201,9 +225,13 @@ h4 {
   opacity: 0.2;
   background-color: #e9fffe;
 }
+@media screen and (max-width: 990px) {
+  .works {
+    margin: 0;
+  }
+}
 
 .letter-holder {
-  padding: 16px;
   display: flex;
   justify-content: center;
   margin: 16rem 0;
@@ -213,6 +241,12 @@ h4 {
   font-size: 6rem;
   color: #a5a6aa;
   font-family: "Inter", sans-serif;
+}
+@media screen and (max-width: 990px) {
+  .letter-holder .letter {
+    font-size: 4.5rem;
+    padding: 0 1.5rem;
+  }
 }
 
 .load-6 .letter {
@@ -264,9 +298,7 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 7rem 0;
   min-height: 100vh;
-  margin: 0 16rem;
 }
 .contact .contact_text {
   color: #ff13eb;
@@ -293,6 +325,35 @@ h4 {
   border: 1px solid #ff13eb;
   padding: 1.5rem;
   border-radius: 5px;
+  transition: all 1s ease;
+}
+.contact_btn:hover {
+  color: #e9fffe;
+}
+
+.footer {
+  margin-bottom: 2rem;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-div .contact__icons > a {
+  padding: 0 1rem;
+  font-size: 2.5rem;
+  color: #ff13eb;
+  transition: all 1s ease;
+}
+.footer-div .contact__icons > a:hover {
+  color: white;
+}
+.footer-div p {
+  color: #ff13eb;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=styles.css.map */

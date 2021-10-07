@@ -1,5 +1,4 @@
 .works {
-    padding: 7rem 0;
     min-height: 100vh;
     margin: 0 $xl * 2;
     .work_text {
@@ -18,10 +17,14 @@
             background-color: $white;
         }
     }
+    @include tablet {
+        & {
+            margin: 0;
+        }
+    }
 }
 
 .letter-holder {
-    padding: 16px;
     display: flex;
     justify-content: center;
     margin: $xl * 2 0;
@@ -30,6 +33,14 @@
         font-size: $lg;
         color: $white-gray;
         font-family: $parrafos;
+    }
+    @include tablet {
+        & {
+            .letter {
+                font-size: 4.5rem;
+                padding: 0 1.5rem;
+            }
+        }
     }
 }
 
