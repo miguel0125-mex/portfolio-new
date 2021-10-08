@@ -50,4 +50,20 @@
             width: 100%;
         }
     }
+    @include phone {
+        .inicio-pre {
+            font-size: 1.35rem;
+        }
+        .inicio-name {
+            font-size: 2.5rem;
+        }
+        .inicio-pre2 {
+            font-size: 2.5rem;
+        }
+        .p-2 {
+            .inicio-pre3 {
+                font-size: 1.35rem;
+            }
+        }
+    }
 }

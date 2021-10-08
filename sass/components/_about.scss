@@ -6,6 +6,11 @@
             padding: 10rem 0;
         }
     }
+    @include phone {
+        & {
+            padding: 8rem 0;
+        }
+    }
 }
 
 .about_div {
@@ -42,6 +47,17 @@
             display: block;
             .about_info {
                 padding-left: 0;
+            }
+        }
+    }
+    @include phone {
+        &>.about_info {
+            .about_text {
+                font-size: 1.35rem;
+            }
+            .about_pre {
+                font-size: 1.35rem;
+                line-height: 1.5;
             }
         }
     }
