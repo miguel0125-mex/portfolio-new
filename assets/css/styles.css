@@ -81,8 +81,9 @@ h4 {
 }
 
 .inicio {
-  min-width: 100vh;
-  padding-top: 5rem;
+  max-height: 75vh;
+  padding-top: 8rem;
+  display: block;
 }
 
 .inicio-info {
@@ -104,7 +105,7 @@ h4 {
   padding-top: 2rem;
 }
 .inicio-info .inicio-pre2 {
-  font-size: 6rem;
+  font-size: 4.8rem;
   font-weight: 700;
   font-family: "Inter", sans-serif;
   color: #a5a6aa;
@@ -123,10 +124,10 @@ h4 {
 }
 @media screen and (max-width: 990px) {
   .inicio-info .inicio-name {
-    font-size: 4.5rem;
+    font-size: 4.8rem;
   }
   .inicio-info .inicio-pre2 {
-    font-size: 4.5rem;
+    font-size: 3.2rem;
     padding-top: 1.5rem;
   }
   .inicio-info .p-2 {
@@ -135,16 +136,17 @@ h4 {
 }
 @media screen and (max-width: 765px) {
   .inicio-info .inicio-pre {
-    font-size: 1.35rem;
+    font-size: 1.8rem;
   }
   .inicio-info .inicio-name {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .inicio-info .inicio-pre2 {
     font-size: 2.5rem;
   }
   .inicio-info .p-2 .inicio-pre3 {
-    font-size: 1.35rem;
+    font-size: 1.7rem;
+    line-height: 1.4;
   }
 }
 
@@ -181,7 +183,7 @@ h4 {
   display: block;
   position: relative;
   bottom: -5px;
-  width: calc(50% - 2rem);
+  width: 55%;
   height: 1px;
   background-color: #e9fffe;
   opacity: 0.2;
@@ -200,14 +202,21 @@ h4 {
   .about_div .about_info {
     padding-left: 0;
   }
+  .about_div .about_info .about_text {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .about_div .about_info .about_text::after {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 765px) {
   .about_div > .about_info .about_text {
-    font-size: 1.35rem;
+    font-size: 1.8rem;
   }
   .about_div > .about_info .about_pre {
-    font-size: 1.35rem;
-    line-height: 1.5;
+    font-size: 1.7rem;
+    line-height: 1.4;
   }
 }
 
@@ -234,7 +243,7 @@ h4 {
 }
 
 .works {
-  min-height: 80vh;
+  max-height: 80vh;
   margin: 0 16rem;
 }
 .works .work_text {
@@ -257,6 +266,21 @@ h4 {
   .works {
     margin: 0;
   }
+  .works .work_text {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 765px) {
+  .works {
+    min-height: 70vh;
+  }
+  .works .work_text {
+    font-size: 1.8rem;
+  }
+  .works .work_text::after {
+    width: 30%;
+  }
 }
 
 .letter-holder {
@@ -274,6 +298,15 @@ h4 {
   .letter-holder .letter {
     font-size: 4.5rem;
     padding: 0 1.5rem;
+  }
+}
+@media screen and (max-width: 765px) {
+  .letter-holder {
+    padding: 0;
+  }
+  .letter-holder .letter {
+    font-size: 3rem;
+    padding: 0 1.2rem;
   }
 }
 
@@ -343,6 +376,24 @@ h4 {
   padding: 6rem 0;
   text-align: center;
 }
+@media screen and (max-width: 990px) {
+  .contact .contact_text {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 765px) {
+  .contact {
+    min-height: 68vh;
+  }
+  .contact .contact_text {
+    font-size: 1.8rem;
+  }
+  .contact .contact_text2 {
+    padding: 4rem 0;
+    font-size: 1.6rem;
+  }
+}
 
 .contact_btn {
   color: #ff13eb;
@@ -357,6 +408,11 @@ h4 {
 }
 .contact_btn:hover {
   color: #e9fffe;
+}
+@media screen and (max-width: 765px) {
+  .contact_btn {
+    font-size: 1.7rem;
+  }
 }
 
 .footer {
@@ -382,6 +438,14 @@ h4 {
   font-family: "Fira Sans", sans-serif;
   font-size: 2rem;
   font-weight: 400;
+}
+@media screen and (max-width: 765px) {
+  .footer-div .contact__icons > a {
+    font-size: 2rem;
+  }
+  .footer-div p {
+    font-size: 1.6rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

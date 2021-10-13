@@ -28,7 +28,7 @@
                 display: block;
                 position: relative;
                 bottom: -5px;
-                width: calc(50% - 2rem);
+                width: 55%;
                 height: 1px;
                 background-color: $white;
                 opacity: .2;
@@ -47,17 +47,24 @@
             display: block;
             .about_info {
                 padding-left: 0;
+                .about_text {
+                    font-size: $xs;
+                    font-weight: $medium;
+                    &::after {
+                        width: 30%;
+                    }
+                }
             }
         }
     }
     @include phone {
         &>.about_info {
             .about_text {
-                font-size: 1.35rem;
+                font-size: 1.8rem;
             }
             .about_pre {
-                font-size: 1.35rem;
-                line-height: 1.5;
+                font-size: 1.7rem;
+                line-height: 1.4;
             }
         }
     }

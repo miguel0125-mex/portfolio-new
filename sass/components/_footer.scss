@@ -21,4 +21,14 @@
         font-size: $xs;
         font-weight: $medium;
     }
+    @include phone {
+        & {
+            .contact__icons>a {
+                font-size: $xs;
+            }
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
 }

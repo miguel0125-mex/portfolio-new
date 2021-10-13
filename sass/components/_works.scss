@@ -1,5 +1,5 @@
 .works {
-    min-height: 80vh;
+    max-height: 80vh;
     margin: 0 $xl * 2;
     .work_text {
         color: $pink;
@@ -20,6 +20,21 @@
     @include tablet {
         & {
             margin: 0;
+            .work_text {
+                font-size: $xs;
+                font-weight: $medium;
+            }
+        }
+    }
+    @include phone {
+        & {
+            min-height: 70vh;
+            .work_text {
+                font-size: 1.8rem;
+                &::after {
+                    width: 30%;
+                }
+            }
         }
     }
 }
@@ -39,6 +54,15 @@
             .letter {
                 font-size: 4.5rem;
                 padding: 0 1.5rem;
+            }
+        }
+    }
+    @include phone {
+        & {
+            padding: 0;
+            .letter {
+                font-size: 3rem;
+                padding: 0 1.2rem;
             }
         }
     }
