@@ -79,6 +79,37 @@ h4 {
 .header .menu > ul > li > a:hover {
   color: #e9fffe;
 }
+@media screen and (max-width: 765px) {
+  .header .menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e9fffe;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+  }
+  .header .menu > ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .menu > ul > li {
+    margin: 2.5rem 0;
+  }
+  .header .menu > ul > li > a {
+    color: #111111;
+    font-weight: 700;
+    font-size: 3.6rem;
+    transition: all 0.4s ease-in-out;
+  }
+  .header .menu > ul > li > a:hover {
+    color: #ff13eb;
+  }
+}
 
 .inicio {
   max-height: 75vh;
@@ -168,6 +199,7 @@ h4 {
 .about_div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
 }
 .about_div .about_info {
   padding-left: 8rem;
@@ -194,6 +226,21 @@ h4 {
   line-height: 1.75;
   font-weight: 2.5rem;
   padding-top: 2.5rem;
+}
+.about_div .about_photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_div .about_photo .div-img > img {
+  max-width: 100%;
+  border: none;
+  border-radius: 5px;
+  filter: grayscale(100%);
+  transition: 0.3s ease-in-out;
+}
+.about_div .about_photo .div-img > img:hover {
+  filter: grayscale(0);
 }
 @media screen and (max-width: 990px) {
   .about_div {

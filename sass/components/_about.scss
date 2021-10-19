@@ -16,6 +16,7 @@
 .about_div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: $md;
     .about_info {
         padding-left: $xl;
         .about_text {
@@ -40,6 +41,23 @@
             line-height: 1.75;
             font-weight: $md;
             padding-top: $md;
+        }
+    }
+    .about_photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .div-img {
+            &>img {
+                max-width: 100%;
+                border: none;
+                border-radius: 5px;
+                filter: grayscale(100%);
+                transition: .3s ease-in-out;
+            }
+            &>img:hover {
+                filter: grayscale(0);
+            }
         }
     }
     @include tablet {
