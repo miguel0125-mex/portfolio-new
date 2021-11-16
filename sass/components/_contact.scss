@@ -52,6 +52,7 @@
     transition: all 1s ease;
     &:hover {
         color: $white;
+        background-color: #ff13eb62;
     }
     @include phone {
         & {

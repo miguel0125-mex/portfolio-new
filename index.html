@@ -17,8 +17,12 @@
 <body>
     <header class="header">
         <h1 class="logo">Logo</h1>
-        <div class="toggleMenu"></div>
-        <nav class="menu">
+        <div class="toggleMenu" id="toggleId">
+            <div class="_layer -top"></div>
+            <div class="_layer -mid"></div>
+            <div class="_layer -bottom"></div>
+        </div>
+        <nav class="menu" id="menuId">
             <ul>
                 <li class="link"><a href="">Home</a></li>
                 <li class="link"><a href="#about">About</a></li>
@@ -27,93 +31,96 @@
             </ul>
         </nav>
     </header>
-    <div class="inicio">
+    <main>
+        <div class="inicio">
+            <div class="container">
+                <div class="inicio-info">
+                    <div class="p-init">
+                        <p class="inicio-pre">Hola, me llamo</p>
+                    </div>
+                    <div class="name">
+                        <h2 class="inicio-name">Miguel Angel Ruíz.</h2>
+                    </div>
+                    <div class="p-1">
+                        <h3 class="inicio-pre2">Iniciando en el vasto mundo del desarrollo web.</h3>
+                    </div>
+                    <div class="p-2">
+                        <p class="inicio-pre3">Soy licenciado en sistemas computacionales, me especializo en el desarrollo web. Actualmente sigo aprendiendo más de este mundo, que en tan poco tiempo le he agarrado cariño...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="about">
+            <div class="container about_div">
+                <div class="about_info">
+                    <h2 class="about_text">About Me</h2>
+                    <p class="about_pre">
+                        Hola!!!!!
+                        <br> Me llamo Miguel Angel Ruíz y soy un joven apasionado por el desarrollo web, aunque apenas estoy iniciando en este mundo, tengo la gran meta de dedicarme a esto; el poder crear paginas web para comercios, y por que no, hasta
+                        de empresas.
+                    </p>
+                    <p class="about_pre">
+                        Mi interes por el desarrollo web comenzo en 2015, cuando decidí estudiar la licenciatura en sistemas computacionales, y todo por querer saber como es se hacen las paginas web y como funcionan. Y bueno, ahora tengo una nocion más grande sobre este mundo.
+                    </p>
+                    <p class="about_pre">
+                        Me gustaria trabajar en una empresa de desarrollo y asi poder ampliar mas mis conocimientos...
+                    </p>
+                    <p class="about_pre">Estas son algunas de las tecnologias con las cuales trabajo recientemente:</p>
+                    <ul class="list_skills">
+                        <li>HTML</li>
+                        <li>CSS3</li>
+                        <li>JAVASCRIPT</li>
+                        <li>SASS</li>
+                    </ul>
+                </div>
+                <div class="about_photo">
+                    <div class="div-img">
+                        <img src="./utilities/img-photo.png" alt="foto de mi">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="works">
+            <div class="container">
+                <h2 class="work_text">Works</h2>
+                <div class="load-6">
+                    <div class="letter-holder">
+                        <div class="l-1 letter">L</div>
+                        <div class="l-2 letter">o</div>
+                        <div class="l-3 letter">a</div>
+                        <div class="l-4 letter">d</div>
+                        <div class="l-5 letter">i</div>
+                        <div class="l-6 letter">n</div>
+                        <div class="l-7 letter">g</div>
+                        <div class="l-8 letter">.</div>
+                        <div class="l-9 letter">.</div>
+                        <div class="l-10 letter">.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
-            <div class="inicio-info">
-                <div class="p-init">
-                    <p class="inicio-pre">Hola, me llamo</p>
-                </div>
-                <div class="name">
-                    <h2 class="inicio-name">Miguel Angel Ruíz.</h2>
-                </div>
-                <div class="p-1">
-                    <h3 class="inicio-pre2">Iniciando en el vasto mundo del desarrollo web.</h3>
-                </div>
-                <div class="p-2">
-                    <p class="inicio-pre3">Soy licenciado en sistemas computacionales, me especializo en el desarrollo web. Actualmente sigo aprendiendo más de este mundo, que en tan poco tiempo le he agarrado cariño...</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="about" class="about">
-        <div class="container about_div">
-            <div class="about_info">
-                <h2 class="about_text">About Me</h2>
-                <p class="about_pre">
-                    Hola!!!!!
-                    <br> Me llamo Miguel Angel Ruíz y soy un joven apasionado por el desarrollo web, aunque apenas estoy iniciando en este mundo, tengo la gran meta de dedicarme a esto; el poder crear paginas web para comercios, y por que no, hasta de
-                    empresas.
+            <div class="contact">
+                <h2 class="contact_text">Contactame... </h2>
+                <p class="contact_text2">
+                    Estoy iniciando en este mundo del desarrollo web, pero ya sea si tienes alguna duda o tan solo un saludo, sera bien recibido!
                 </p>
-                <p class="about_pre">
-                    Mi interes por el desarrollo web comenzo en 2015, cuando decidí estudiar la licenciatura en sistemas computacionales, y todo por querer saber como es se hacen las paginas web y como funcionan. Y bueno, ahora tengo una nocion más grande sobre este mundo.
-                </p>
-                <p class="about_pre">
-                    Me gustaria trabajar en una empresa de desarrollo y asi poder ampliar mas mis conocimientos...
-                </p>
-                <p class="about_pre">Estas son algunas de las tecnologias con las cuales trabajo recientemente:</p>
-                <ul class="list_skills">
-                    <li>HTML</li>
-                    <li>CSS3</li>
-                    <li>JAVASCRIPT</li>
-                    <li>SASS</li>
-                </ul>
+                <a class="contact_btn" href="mailto:later481@gmail.com" target="_blank">Saludame!!!!</a>
             </div>
-            <div class="about_photo">
-                <div class="div-img">
-                    <img src="./utilities/img-photo.png" alt="foto de mi">
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-div">
+                    <div class="contact__icons">
+                        <a href="https://github.com/miguel0125-mex " target="_blank "><i class=' bx bxl-github'></i></a>
+                        <a href=""><i class=' bx bxl-linkedin'></i></a>
+                    </div>
+                    <p>Miguel Ruiz</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="works">
-        <div class="container">
-            <h2 class="work_text">Works</h2>
-            <div class="load-6">
-                <div class="letter-holder">
-                    <div class="l-1 letter">L</div>
-                    <div class="l-2 letter">o</div>
-                    <div class="l-3 letter">a</div>
-                    <div class="l-4 letter">d</div>
-                    <div class="l-5 letter">i</div>
-                    <div class="l-6 letter">n</div>
-                    <div class="l-7 letter">g</div>
-                    <div class="l-8 letter">.</div>
-                    <div class="l-9 letter">.</div>
-                    <div class="l-10 letter">.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="contact">
-            <h2 class="contact_text">Contactame... </h2>
-            <p class="contact_text2">
-                Estoy iniciando en este mundo del desarrollo web, pero ya sea si tienes alguna duda o tan solo un saludo, sera bien recibido!
-            </p>
-            <a class="contact_btn" href="mailto:later481@gmail.com" target="_blank">Saludame!!!!</a>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <div class="footer-div">
-                <div class="contact__icons">
-                    <a href="https://github.com/miguel0125-mex " target="_blank "><i class=' bx bxl-github'></i></a>
-                    <a href=""><i class=' bx bxl-linkedin'></i></a>
-                </div>
-                <p>Miguel Ruiz</p>
-            </div>
-        </div>
-    </div>
+    </main>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
