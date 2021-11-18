@@ -1,7 +1,14 @@
 .inicio {
     max-height: 75vh;
-    padding-top: 8rem;
+    padding-top: 15rem;
     display: block;
+    position: relative;
+    z-index: -1;
+    @include tablet {
+        & {
+            padding-top: 11rem;
+        }
+    }
 }
 
 .inicio-info {
@@ -52,7 +59,7 @@
         }
     }
     @include phone {
-        .inicio-pre {
+        .inicio-p1re {
             font-size: 1.8rem;
         }
         .inicio-name {

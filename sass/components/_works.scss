@@ -15,6 +15,7 @@
             height: 1px;
             opacity: .2;
             background-color: $white;
+            z-index: -1;
         }
     }
     @include tablet {
@@ -43,6 +44,8 @@
     display: flex;
     justify-content: center;
     margin: $xl * 2 0;
+    position: relative;
+    z-index: -1;
     .letter {
         padding: 0 $xs;
         font-size: $lg;
