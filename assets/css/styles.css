@@ -56,10 +56,9 @@ h4 {
   padding: 2rem 2.5rem;
 }
 .header .logo {
-  font-size: 2rem;
+  font-size: 5rem;
   color: #ff13eb;
   margin: 1rem;
-  font-family: "Fira Sans", sans-serif;
   z-index: 1001;
 }
 .header .menu > ul {
@@ -85,6 +84,9 @@ h4 {
   display: none;
 }
 @media screen and (max-width: 765px) {
+  .header .logo {
+    font-size: 4rem;
+  }
   .header .menu {
     display: flex;
     position: fixed;
@@ -155,7 +157,7 @@ h4 {
     background-color: none;
   }
   .header ._layer {
-    background: #a5a6aa;
+    background: #ff13eb;
     margin-bottom: 5px;
     border-radius: 2px;
     width: 35px;

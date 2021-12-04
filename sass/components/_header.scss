@@ -5,10 +5,9 @@
     justify-content: space-between;
     padding: $xs $md;
     .logo {
-        font-size: $xs;
+        font-size: 5rem;
         color: $pink;
         margin: 1rem;
-        font-family: $titulos;
         z-index: 1001;
     }
     .menu>ul {
@@ -35,6 +34,9 @@
     }
     @include phone {
         & {
+            .logo {
+                font-size: 4rem;
+            }
             .menu {
                 display: flex;
                 position: fixed;
@@ -106,7 +108,7 @@
                 background-color: none;
             }
             ._layer {
-                background: $white-gray;
+                background: $pink;
                 margin-bottom: 5px;
                 border-radius: 2px;
                 width: 35px;
