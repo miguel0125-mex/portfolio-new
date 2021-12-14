@@ -71,7 +71,8 @@ h4 {
 }
 .header .menu > ul > li > a {
   text-decoration: none;
-  font-size: 1.3;
+  font-size: 2rem;
+  font-weight: 700;
   color: #ff13eb;
   font-weight: 1rem;
   transition: all 0.5s ease-in-out;
@@ -151,7 +152,7 @@ h4 {
   .header .toggleMenu.is-active .-bottom {
     -webkit-transform: translateY(-200%) rotate(135deg) !important;
     -ms-transform: translateY(-200%) rotate(135deg) !important;
-    transform: translateY(-200%) rotate(135deg) !important;
+    transform: translateY(-200%) rotate(130deg) !important;
   }
   .header .toggleMenu.is-active {
     background-color: none;
@@ -186,7 +187,7 @@ h4 {
   flex-direction: column;
 }
 .inicio-info .inicio-pre {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #ff13eb;
   font-weight: 400;
   font-family: "Fira Sans", sans-serif;
@@ -248,6 +249,7 @@ h4 {
 .about {
   padding: 14rem 0;
   min-height: 100vh;
+  z-index: -1;
 }
 @media screen and (max-width: 990px) {
   .about {
@@ -300,16 +302,17 @@ h4 {
 .about_div .about_photo .div-img {
   position: relative;
   z-index: -1;
+  /*
+  &>img:hover {
+      //filter: grayscale(0);
+      filter: none;
+  }*/
 }
 .about_div .about_photo .div-img > img {
   max-width: 400px;
   border: none;
   border-radius: 5px;
   transition: 0.3s ease-in-out;
-  filter: blur(1px);
-}
-.about_div .about_photo .div-img > img:hover {
-  filter: none;
 }
 .about_div .about_photo .div-img:after {
   content: "";

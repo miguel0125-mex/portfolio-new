@@ -1,6 +1,7 @@
 .about {
     padding: 14rem 0;
     min-height: 100vh;
+    z-index: -1;
     @include tablet {
         & {
             padding: 10rem 0;
@@ -57,12 +58,13 @@
                 border-radius: 5px;
                 //filter: grayscale(100%);
                 transition: .3s ease-in-out;
-                filter: blur(1px);
+                //filter: blur(2px);
             }
+            /*
             &>img:hover {
                 //filter: grayscale(0);
                 filter: none;
-            }
+            }*/
             &:after {
                 content: "";
                 position: absolute;

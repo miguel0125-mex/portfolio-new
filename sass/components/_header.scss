@@ -18,7 +18,8 @@
             padding: 0 $xs;
             &>a {
                 text-decoration: none;
-                font-size: 1.30;
+                font-size: $xs;
+                font-weight: $bold;
                 color: $pink;
                 font-weight: 1rem;
                 transition: all .5s ease-in-out;
@@ -101,7 +102,7 @@
                 &.is-active .-bottom {
                     -webkit-transform: translateY(-200%) rotate(135deg) !important;
                     -ms-transform: translateY(-200%) rotate(135deg) !important;
-                    transform: translateY(-200%) rotate(135deg) !important;
+                    transform: translateY(-200%) rotate(130deg) !important;
                 }
             }
             .toggleMenu.is-active {
