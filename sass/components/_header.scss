@@ -3,12 +3,16 @@
     display: flex;
     position: fixed;
     justify-content: space-between;
-    padding: $xs $md;
+    padding: 10px $md;
+    transition: 1s ease all;
     .logo {
-        font-size: 5rem;
+        font-size: 4rem;
         color: $pink;
-        margin: 1rem;
+        margin: 5px;
         z-index: 1001;
+    }
+    .overflow {
+        overflow: hidden;
     }
     .menu>ul {
         display: flex;
@@ -73,9 +77,10 @@
                 transform: translate3d(0px, 0px, 0px);
             }
             .toggleMenu {
+                z-index: 1000;
                 display: block;
                 //position: fixed;
-                margin-top: 10px;
+                margin-top: 20px;
                 transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
                 z-index: 1000;
                 cursor: pointer;
@@ -120,4 +125,8 @@
             }
         }
     }
+}
+
+.header.scroll {
+    background-color: rgba(95, 95, 95, 0.5), ;
 }

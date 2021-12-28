@@ -26,3 +26,12 @@ function linkAction() {
     menu.classList.remove("is-active");
     btnMenu.classList.remove('is-active');
 }
+
+window.addEventListener("scroll", function() {
+    const header = document.getElementById("header");
+    if (window.pageYOffset > 50) {
+        header.classList.add('scroll');
+    } else {
+        header.classList.remove("scroll");
+    }
+})
