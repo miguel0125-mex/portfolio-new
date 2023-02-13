@@ -1,12 +1,13 @@
 .inicio {
-    max-height: 75vh;
-    padding-top: 15rem;
-    display: block;
+    min-height: 100vh;
+    // padding-top: 15rem;
+    display: flex;
     position: relative;
     z-index: -1;
+    align-items: center;
     @include tablet {
         & {
-            padding-top: 11rem;
+            // padding-top: 11rem;
         }
     }
 }
