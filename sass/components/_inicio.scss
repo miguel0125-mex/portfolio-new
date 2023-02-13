@@ -7,6 +7,7 @@
     align-items: center;
     @include tablet {
         & {
+            min-height: 80vh;
             // padding-top: 11rem;
         }
     }
@@ -22,7 +23,7 @@
         font-family: $titulos;
     }
     .inicio-name {
-        font-size: $lg;
+        font-size: $xl;
         font-weight: $bold;
         font-family: $parrafos;
         color: $white;
@@ -30,8 +31,8 @@
         padding-top: $xs;
     }
     .inicio-pre2 {
-        font-size: 4.8rem;
-        font-weight: $bold;
+        font-size: $md;
+        font-weight: $medium;
         font-family: $parrafos;
         color: $white-gray;
         opacity: .8;
@@ -77,3 +78,21 @@
         }
     }
 }
+
+
+// Animation
+.tracking-in-contract {
+    animation: tracking-in-contract 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes tracking-in-contract {
+    0% {
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        
+        filter: blur(0px);
+        opacity: 1;
+    }
+} 
