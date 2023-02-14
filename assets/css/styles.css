@@ -57,8 +57,9 @@ section {
   display: flex;
   position: fixed;
   justify-content: space-between;
-  padding: 10px 2.5rem;
+  padding: 20px 7rem;
   transition: 1s ease all;
+  align-items: center;
 }
 .header .logo {
   font-size: 4rem;
@@ -93,6 +94,9 @@ section {
   display: none;
 }
 @media screen and (max-width: 765px) {
+  .header {
+    padding: 10px 3.2rem;
+  }
   .header .logo {
     font-size: 4rem;
   }
@@ -133,7 +137,6 @@ section {
   .header .toggleMenu {
     z-index: 1000;
     display: block;
-    margin-top: 20px;
     transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
     z-index: 1000;
     cursor: pointer;
@@ -180,6 +183,36 @@ section {
 
 .header.scroll {
   background-color: rgba(95, 95, 95, 0.5);
+}
+
+.list_social {
+  width: 120px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 999;
+}
+.list_social li {
+  list-style: none;
+  padding-top: 2.5rem;
+  transition: 1s linear;
+}
+.list_social li:hover {
+  transform: translate(2.5rem);
+}
+.list_social li a {
+  font-size: 4rem;
+  color: #ff13eb;
+  transition: 0.5s ease-out;
+}
+.list_social li a:hover {
+  color: #e9fffe;
+}
+@media screen and (max-width: 990px) {
+  .list_social {
+    display: none;
+  }
 }
 
 .inicio {
@@ -591,7 +624,7 @@ section {
 }
 
 .footer-div {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
 }
@@ -610,7 +643,10 @@ section {
   font-size: 2rem;
   font-weight: 400;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 990px) {
+  .footer-div {
+    display: flex;
+  }
   .footer-div .contact__icons > a {
     font-size: 2rem;
   }

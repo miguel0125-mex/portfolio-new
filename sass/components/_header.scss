@@ -3,8 +3,9 @@
     display: flex;
     position: fixed;
     justify-content: space-between;
-    padding: 10px $md;
+    padding: 20px 7rem;
     transition: 1s ease all;
+    align-items: center;
     .logo {
         font-size: 4rem;
         color: $pink;
@@ -39,6 +40,7 @@
     }
     @include phone {
         & {
+            padding: 10px $md-m;
             .logo {
                 font-size: 4rem;
             }
@@ -79,8 +81,8 @@
             .toggleMenu {
                 z-index: 1000;
                 display: block;
-                //position: fixed;
-                margin-top: 20px;
+                // position: fixed;
+                // margin-top: 20px;
                 transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
                 z-index: 1000;
                 cursor: pointer;
@@ -128,5 +130,35 @@
 }
 
 .header.scroll {
-    background-color: rgba(95, 95, 95, 0.5), ;
+    background-color: rgba(95, 95, 95, 0.5);
+}
+
+.list_social{
+    width: 120px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 999;
+    li {
+        list-style: none;
+        padding-top: $md;
+        transition: 1s linear;
+        &:hover{
+            transform: translate($md);
+        }
+        a{
+            font-size: 4rem;
+            color: $pink;
+            transition: .5s ease-out;
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+    @include tablet{
+        &{
+            display: none;
+        }
+    }
 }
