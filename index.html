@@ -18,50 +18,60 @@
 </head>
 
 <body>
-    <header class="header" id="header">
-        <a class="logo" href="/">
-            <i class='bx bx-meteor'></i>
-        </a>
-        <div class="toggleMenu" id="toggleId">
-            <div class="_layer -top"></div>
-            <div class="_layer -mid"></div>
-            <div class="_layer -bottom"></div>
-        </div>
-        <nav class="menu overflow" id="menuId">
-            <ul>
-                <li class="link" id="link"><a href="#home">Inicio</a></li>
-                <li class="link" id="link"><a href="#about">Sobre mí</a></li>
-                <li class="link" id="link"><a href="#works">Proyectos</a></li>
-                <li class="link" id="link"><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div id="home" class="inicio">
-            <div class="container">
-                <div class="inicio-info">
-                    <div class="p-init">
-                        <p class="inicio-pre">Hola, me llamo</p>
-                    </div>
-                    <div class="name">
-                        <h2 class="inicio-name">Miguel Angel Ruíz.</h2>
-                    </div>
-                    <div class="p-1">
-                        <h3 class="inicio-pre2">Iniciando en el vasto mundo del desarrollo web.</h3>
-                    </div>
-                    <div class="p-2">
-                        <p class="inicio-pre3">Soy licenciado en sistemas computacionales, me especializo en el desarrollo web. Actualmente sigo aprendiendo más de este mundo, que en tan poco tiempo le he agarrado cariño...</p>
-                    </div>
-                </div>
+    <header  class="header" id="header">
+        <!-- <div class="header"> -->
+            <a class="logo" href="/">
+                <i class='bx bx-meteor'></i>
+            </a>
+            <div class="toggleMenu" id="toggleId">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
             </div>
-        </div>
-        <div id="about" class="about">
+            <div class="list_social">
+                <ul>
+                    <li class="social"><a href=""><i class='bx bxl-github'></i></a></li>
+                    <li class="social"><a href=""><i class='bx bxl-linkedin-square' ></i></a></li>
+                    <li class="social"><a href=""><i class='bx bxl-facebook-square' ></i></a></li>
+                </ul>
+            </div>
+            <nav class="menu overflow" id="menuId">
+                <ul>
+                    <li class="link" id="link"><a href="#home">Inicio</a></li>
+                    <li class="link" id="link"><a href="#about">Sobre mí</a></li>
+                    <li class="link" id="link"><a href="#works">Proyectos</a></li>
+                    <li class="link" id="link"><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>    
+        <!-- </div> -->
+        
+    </header>
+
+    <main>
+        <section id="home" class="inicio">
+            <div class="inicio-info container">
+                <div class="p-init">
+                    <p class="inicio-pre">Hola, me llamo</p>
+                </div>
+                <div class="name">
+                    <h2 class="inicio-name tracking-in-contract">Miguel Angel Ruíz.</h2>
+                </div>
+                <div class="p-1">
+                    <h3 class="inicio-pre2">Desarrollador Frontend JR / Ingeniero de Soporte</h3>
+                </div>
+                <div class="p-2">
+                    <p class="inicio-pre3">Soy un joven apasionado por el desarrollo web, aunque apenas estoy iniciando en este mundo, tengo la gran meta de dedicarme a esto; el poder crear paginas web para comercios, y por que no, hasta de empresas.</p>
+                    <p class="inicio-pre3">Trabajo como ingeniero de soporte pero eso no me detiene para seguir aprendiendo desarrollo web.</p>
+                </div>
+            </div>    
+        </section>
+
+        <section id="about" class="about">
             <div class="container about_div">
                 <div class="about_info">
                     <h2 class="about_text">Sobre mí</h2>
                     <p class="about_pre">
-                        Hola!!!!!
-                        <br> Me llamo Miguel Angel Ruíz y soy un joven apasionado por el desarrollo web, aunque apenas estoy iniciando en este mundo, tengo la gran meta de dedicarme a esto; el poder crear paginas web para comercios, y por que no, hasta
+                        Me llamo Miguel Angel Ruíz y soy un joven apasionado por el desarrollo web, aunque apenas estoy iniciando en este mundo, tengo la gran meta de dedicarme a esto; el poder crear paginas web para comercios, y por que no, hasta
                         de empresas.
                     </p>
                     <p class="about_pre">
@@ -84,12 +94,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="works" class="works">
+        </section>
+
+        <section id="works" class="works">
             <div class="container">
                 <h2 class="work_text">Proyectos</h2>
                 <div class="load-6">
-                    <div class="letter-holder">
+                    <!-- <div class="letter-holder">
                         <div class="l-1 letter">C</div>
                         <div class="l-2 letter">a</div>
                         <div class="l-3 letter">r</div>
@@ -101,11 +112,12 @@
                         <div class="l-9 letter">.</div>
                         <div class="l-10 letter">.</div>
                         <div class="l-11 letter">.</div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
-        </div>
-        <div id="contact" class="container">
+        </section>
+
+        <section id="contact" class="container">
             <div class="contact">
                 <h2 class="contact_text">Contactame... </h2>
                 <p class="contact_text2">
@@ -113,7 +125,8 @@
                 </p>
                 <a class="contact_btn" href="mailto:later481@gmail.com" target="_blank">Saludame!!!!</a>
             </div>
-        </div>
+        </section>
+
         <div class="footer">
             <div class="container">
                 <div class="footer-div">

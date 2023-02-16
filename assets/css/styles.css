@@ -48,19 +48,28 @@ h4 {
   margin: 0;
 }
 
+section {
+  min-height: 100vh;
+}
+
 .header {
   width: 100%;
   display: flex;
   position: fixed;
   justify-content: space-between;
-  padding: 10px 2.5rem;
+  padding: 20px 7rem;
   transition: 1s ease all;
+  align-items: center;
 }
 .header .logo {
   font-size: 4rem;
   color: #ff13eb;
   margin: 5px;
   z-index: 1001;
+  transition: all 0.5s;
+}
+.header .logo:hover {
+  color: #e9fffe;
 }
 .header .overflow {
   overflow: hidden;
@@ -89,6 +98,9 @@ h4 {
   display: none;
 }
 @media screen and (max-width: 765px) {
+  .header {
+    padding: 10px 3.2rem;
+  }
   .header .logo {
     font-size: 4rem;
   }
@@ -99,7 +111,7 @@ h4 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #111111fa;
+    background: #3d3b3b;
     z-index: 999;
     align-items: center;
     text-align: center;
@@ -129,7 +141,6 @@ h4 {
   .header .toggleMenu {
     z-index: 1000;
     display: block;
-    margin-top: 20px;
     transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
     z-index: 1000;
     cursor: pointer;
@@ -178,16 +189,46 @@ h4 {
   background-color: rgba(95, 95, 95, 0.5);
 }
 
+.list_social {
+  width: 120px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 999;
+}
+.list_social li {
+  list-style: none;
+  padding-top: 2.5rem;
+  transition: 1s linear;
+}
+.list_social li:hover {
+  transform: translate(2.5rem);
+}
+.list_social li a {
+  font-size: 4rem;
+  color: #ff13eb;
+  transition: 0.5s ease-out;
+}
+.list_social li a:hover {
+  color: #e9fffe;
+}
+@media screen and (max-width: 990px) {
+  .list_social {
+    display: none;
+  }
+}
+
 .inicio {
-  max-height: 75vh;
-  padding-top: 15rem;
-  display: block;
+  min-height: 100vh;
+  display: flex;
   position: relative;
   z-index: -1;
+  align-items: center;
 }
 @media screen and (max-width: 990px) {
   .inicio {
-    padding-top: 11rem;
+    min-height: 80vh;
   }
 }
 
@@ -202,7 +243,7 @@ h4 {
   font-family: "Fira Sans", sans-serif;
 }
 .inicio-info .inicio-name {
-  font-size: 6rem;
+  font-size: 8rem;
   font-weight: 700;
   font-family: "Inter", sans-serif;
   color: #e9fffe;
@@ -210,8 +251,8 @@ h4 {
   padding-top: 2rem;
 }
 .inicio-info .inicio-pre2 {
-  font-size: 4.8rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 400;
   font-family: "Inter", sans-serif;
   color: #a5a6aa;
   opacity: 0.8;
@@ -255,22 +296,25 @@ h4 {
   }
 }
 
-.about {
-  padding: 14rem 0;
-  min-height: 100vh;
-  z-index: -1;
-}
-@media screen and (max-width: 990px) {
-  .about {
-    padding: 10rem 0;
-  }
-}
-@media screen and (max-width: 765px) {
-  .about {
-    padding: 8rem 0;
-  }
+.tracking-in-contract {
+  animation: tracking-in-contract 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
+@keyframes tracking-in-contract {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.about {
+  display: flex;
+  align-items: center;
+  z-index: -1;
+}
 .about_div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -281,7 +325,7 @@ h4 {
 }
 .about_div .about_info .about_text {
   color: #ff13eb;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
@@ -299,9 +343,9 @@ h4 {
 .about_div .about_info .about_pre {
   color: #a5a6aa;
   font-family: "Inter", sans-serif;
-  line-height: 1.75;
   font-weight: 2.5rem;
   padding-top: 2.5rem;
+  font-size: 2rem;
 }
 .about_div .about_photo {
   display: flex;
@@ -373,7 +417,7 @@ h4 {
   color: #a5a6aa;
   font-family: "Inter", sans-serif;
   font-weight: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   line-height: 1.75;
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
@@ -560,7 +604,7 @@ h4 {
 }
 .contact_btn:hover {
   color: #e9fffe;
-  background-color: #ff13eb62;
+  background-color: rgba(255, 19, 235, 0.3843137255);
 }
 @media screen and (max-width: 765px) {
   .contact_btn {
@@ -573,7 +617,7 @@ h4 {
 }
 
 .footer-div {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
 }
@@ -592,7 +636,10 @@ h4 {
   font-size: 2rem;
   font-weight: 400;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 990px) {
+  .footer-div {
+    display: flex;
+  }
   .footer-div .contact__icons > a {
     font-size: 2rem;
   }

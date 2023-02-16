@@ -3,7 +3,7 @@
 }
 
 .footer-div {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     .contact__icons>a {
@@ -21,8 +21,9 @@
         font-size: $xs;
         font-weight: $medium;
     }
-    @include phone {
+    @include tablet {
         & {
+            display: flex;
             .contact__icons>a {
                 font-size: $xs;
             }
