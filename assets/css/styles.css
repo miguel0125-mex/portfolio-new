@@ -66,6 +66,10 @@ section {
   color: #ff13eb;
   margin: 5px;
   z-index: 1001;
+  transition: all 0.5s;
+}
+.header .logo:hover {
+  color: #e9fffe;
 }
 .header .overflow {
   overflow: hidden;
@@ -107,7 +111,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: #3d3b3b;
     z-index: 999;
     align-items: center;
     text-align: center;
@@ -307,21 +311,10 @@ section {
   }
 }
 .about {
-  padding: 14rem 0;
-  min-height: 100vh;
+  display: flex;
+  align-items: center;
   z-index: -1;
 }
-@media screen and (max-width: 990px) {
-  .about {
-    padding: 10rem 0;
-  }
-}
-@media screen and (max-width: 765px) {
-  .about {
-    padding: 8rem 0;
-  }
-}
-
 .about_div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -332,7 +325,7 @@ section {
 }
 .about_div .about_info .about_text {
   color: #ff13eb;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
@@ -350,9 +343,9 @@ section {
 .about_div .about_info .about_pre {
   color: #a5a6aa;
   font-family: "Inter", sans-serif;
-  line-height: 1.75;
   font-weight: 2.5rem;
   padding-top: 2.5rem;
+  font-size: 2rem;
 }
 .about_div .about_photo {
   display: flex;
@@ -424,7 +417,7 @@ section {
   color: #a5a6aa;
   font-family: "Inter", sans-serif;
   font-weight: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   line-height: 1.75;
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
