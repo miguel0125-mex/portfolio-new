@@ -5,9 +5,9 @@
     position: relative;
     z-index: -1;
     align-items: center;
-    @include tablet {
+    @include phone {
         & {
-            min-height: 80vh;
+            min-height: 60vh;
             // padding-top: 11rem;
         }
     }
@@ -34,7 +34,7 @@
         font-size: $md;
         font-weight: $medium;
         font-family: $parrafos;
-        color: $white-gray;
+        color: $pink;
         opacity: .8;
         padding: $xs 0;
     }

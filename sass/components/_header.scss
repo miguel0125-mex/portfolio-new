@@ -3,11 +3,11 @@
     display: flex;
     position: fixed;
     justify-content: space-between;
-    padding: 20px 7rem;
+    padding: 10px 5rem;
     transition: 1s ease all;
     align-items: center;
     .logo {
-        font-size: 4rem;
+        font-size: $md-l;
         color: $pink;
         margin: 5px;
         z-index: 1001;

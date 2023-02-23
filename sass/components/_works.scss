@@ -1,6 +1,8 @@
 .works {
-    max-height: 80vh;
-    margin: 0 $xl * 2;
+    display: flex;
+    align-items: center;
+    // min-height: 100vh;
+    // margin: 0 $xl * 2;
     .work_text {
         color: $pink;
         font-size: $md;
